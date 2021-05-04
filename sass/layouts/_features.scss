@@ -1,0 +1,47 @@
+
+    .features__title {
+        color: var(--title-text-color);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.2px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        list-style: none;
+      }
+      .features__text {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 2;
+          letter-spacing: 0.03em;  
+      }
+      
+      
+  
+  .section__item::before {
+      content: '';
+      display: block;
+      height: 120px;
+      background-color: var(--bg-team-color);
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-bottom: 30px;
+     
+  } 
+  
+  .section__item::before {
+      background-image: url(../images/icon/antenna.svg.svg);
+  }
+  
+  .clock::before{
+      background-image: url(../images/icon/clock.svg.svg);
+  }
+  .diagrama::before{
+      background-image: url(../images/icon/diagram.svg.svg);
+  }
+  .astronaut::before{
+      background-image: url(../images/icon/astronaut.svg.svg);
+  }
+  

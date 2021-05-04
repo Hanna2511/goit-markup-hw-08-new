@@ -1,0 +1,83 @@
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+.page{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color:var(--title-name-color);
+  }
+a {
+text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p ,
+ul {
+   margin-top: 0; 
+   margin-bottom: 0;
+}
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.team {
+    padding-bottom: 94px;
+    background-color:var(--bg-page-color);
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section__item {
+    flex-basis: calc((100% - 30px * 4) / 4);
+margin-left: 30px;
+margin-top: 30px;
+text-align: center;
+}
+  .header,
+  .page header {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid #ececec
+  }

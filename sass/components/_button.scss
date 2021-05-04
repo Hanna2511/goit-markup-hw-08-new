@@ -1,0 +1,50 @@
+.hero__knob {
+    color: var(--title-name-color);
+    background-color: var(--accent-color);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+   
+    letter-spacing: 0.06em;
+    min-width: 200px;
+    border-radius: 4px;
+    min-height: 50px;
+    padding: 10px 32px;
+    }
+    .hero__knob:hover {
+        color:var(--title-name-color);
+        background-color: var(--accent-color);
+    }
+    
+  .portfolio-navigator__list-button {
+    display: inline-block;
+    padding: 6px 22px;
+    color: var(--title-text-color);
+    background-color: var(--bg-team-color);
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 4px;
+    min-width: 73px;
+    text-decoration: none;
+    border: whitesmoke;
+    cursor: pointer;
+    transition-property: background-color, color, box-shadow, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+
+
+.portfolio-navigator__list-button:hover,
+.portfolio-navigator__list-button:focus {
+    color:var(--title-name-color);
+    background-color:var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  
+}

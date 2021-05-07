@@ -1,4 +1,9 @@
-
+.section-foto {
+  display: none;
+  @media screen and (min-width: 1200px) {
+     display: block;
+  }
+}
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -43,8 +48,8 @@
     position: relative;
     opacity: 1;
 }
-  .grid__foto-text {
-    display: flex;
+  .grid__foto-box {
+    display: flex; 
     position: absolute;
     width: 100%;
     height: 70px;
@@ -53,7 +58,8 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(47, 48, 58, 0.8);
-
+  }
+.grid__foto-text {
     font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -65,8 +71,4 @@
   color: var(--title-name-color);
   }
 
-  .section-foto {
-    display: none;
-    @media screen and (min-width: 1200px) {
-       display: block;
-    }}
+ 

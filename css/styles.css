@@ -154,6 +154,13 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-navigator {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
 .portfolio-navigator__list {
   display: inline-flex;
   flex-wrap: wrap;

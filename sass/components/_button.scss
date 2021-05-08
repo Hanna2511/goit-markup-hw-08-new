@@ -26,14 +26,18 @@
 justify-content: center;
 margin-bottom: 50px;
     }
+    @media screen and (min-width: 768px){
+        text-align: center;
+        justify-content: center;  
+    }
 
-    
 &__list {
   display: inline-flex;
   flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: -8px;
+  
 }
 &__list-button {
 padding: 6px 22px;

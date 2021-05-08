@@ -11,28 +11,30 @@
 </head>
 <body class="page">
     шапка
-   <!-- <header class="header">
+    <header class="header">
        <div class="container header__container"> 
-       <nav class="navigation">
-       <a href="./index.html" class="logo header__logo"> <span class="logo__color">Web</span> Studio</a>
+        <a href="./index.html" class="logo header__logo"> <span class="logo__color">Web</span> Studio</a>
+        <div class="mobile-menu" id="menu-container" data-menu>
+        <nav class="navigation">
     <ul class="site-nav list menu">
-       <li class="menu__item"><a href="" class="link site-nav__current current menu__link"> Студия</a></li>
-       <li class="menu__item"><a href="./portfolio.html" class="link menu__link link-current" >Портфолио</a></li>
-       <li class="menu__item"><a href="" class="link menu__link">Контакты</a></li>
+        <li class="site-nav__item"> <a href="" class="link site-nav__current current site-nav__link"> Студия</a></li>
+       <li class="site-nav__item"><a href="./portfolio.html" class="link site-nav__link link-current" >Портфолио</a></li>
+       <li class="site-nav__item"><a href="" class="link site-nav__link">Контакты</a></li>
     </ul>
         </nav>
-    <ul class="contacts-nav list menu"> 
-       <li class="menu__item"> 
-           <a href="mailto:info@devstudio.com" class="item menu__link ">
-               <svg class="icon menu__item-icon" width= "16" height= "12" fill= "currentcolor">
-                   <use class="icon-envelopehsvg" href="./images/sprite.svg.svg#icon-envelopehsvg"> </use>
+        <div class="header-social-box">
+    <ul class="contacts-nav list "> 
+       <li class="site-nav__item mail"> 
+           <a href="mailto:info@devstudio.com" class="item site-nav__mail ">
+               <svg class="icon site-nav__mail-icon" width= "16" height= "12" fill= "currentcolor">
+                   <use  href="./images/sprite.svg.svg#icon-envelopehsvg"> </use>
                </svg>
                info@devstudio.com 
             </a>
         </li>
-    <li class="menu__item">
-        <a href="tel:+380961111111" class="item menu__link">
-            <svg class="icon menu__item-icon" width= "10" height= "16" fill= "currentcolor"> 
+    <li class="site-nav__item tel">
+        <a href="tel:+380961111111" class="item site-nav__tel">
+            <svg class="icon site-nav__tel-icon" width= "10" height= "16" fill= "currentcolor"> 
                 <use href="./images/tel.svg.svg#icon-Vector"> 
                 </use>
             </svg>
@@ -40,16 +42,50 @@
             </a>
         </li>
     </ul>
+    <ul class="header-socials">
+        <li class="header-socials__item">
+          <a href="" class="header-socials__link">Instagram</a>
+        </li>
+        <li class="header-socials__item">
+          <a href="" class="header-socials__link">Twitter</a>
+        </li>
+        <li class="header-socials__item">
+          <a href="" class="header-socials__link">Facebook</a>
+        </li>
+        <li class="header-socials__item">
+          <a href="" class="header-socials__link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+</div>
+<button
+type="button"
+class="header-menu-button"
+aria-label="Переход мобильного меню"
+aria-expanded="false"
+data-menu-button
+>
+<svg class="header-menu-button__svg" width="40" height="40">
+  <use
+    class="header-menu-button__icon header-menu-button__icon--cross"
+    href="./images/icon/menu.svg#icon-cross"
+  ></use>
+  <use
+    class="header-menu-button__icon header-menu-button__icon--menu"
+    href="./images/icon/menu.svg#icon-menu"
+  ></use>
+</svg>
+</button>
        </div>
    </header> 
    <!-- герой -->
-    <main>
+    <!-- <main>
        <section class="hero">
            <div class="container">
            <h1 class="hero__title  hero-container"> Эффективные решения <br />для вашего бизнеса</h1>
            <button type="button" class="knob hero__knob hero-container" data-modal-open >Заказать услугу </button>
         </div>
-       </section> 
+       </section>  -->
       
         <!-- <section class="feature section"> 
            <div class="container">
@@ -406,7 +442,7 @@
 </form>
 </div>
  </footer>  -->
-  
+<!--   
  <div class="blackdrop is-hidden" data-modal>
     <div class="modal">
         <button class="modal__btd-close" data-modal-close>
@@ -453,8 +489,9 @@
           </form>
     </div>
 </div>
-  
-<script src="./js/modal.js"></script>  --> -->
+   -->
+   <script src="./js/menu.js"></script>
+<script src="./js/modal.js"></script>  
 </body>
 </html> -->
 

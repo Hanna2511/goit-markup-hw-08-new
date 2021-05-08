@@ -12,6 +12,9 @@ html{
 body {
     margin: 0;
 }
+body.modal-open {
+  overflow: hidden;
+}
 .page{
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
@@ -49,13 +52,9 @@ ul {
 img {
     display: block;
     max-width: 100%;
-    height: auto;
+
 }
 .list {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
   list-style: none;
 }
 .team {
@@ -66,8 +65,13 @@ img {
     margin-left: auto;
   }
   .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
   
   

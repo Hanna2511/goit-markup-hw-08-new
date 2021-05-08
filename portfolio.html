@@ -10,38 +10,73 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body class="potrfolio">
-        <!-- шапка -->
-        <header class=" page header">
-            <div class="portfolio__container header__portfolio__container"> 
-            <nav class="portfolio-navigation">
-            <a href="./index.html" class="logo header__logo"> <span class="logo__color">Web</span> Studio</a>
-            <ul class="site-nav list menu">
-                <li class="menu__item"><a href="./index.html" class="link menu__link "> Студия</a></li>
-                <li class="menu__item"><a href="portfolio.html" class="link current site-nav__current  menu__link " >Портфолио</a></li>
-                <li class="menu__item"><a href="" class="link menu__link">Контакты</a></li>
-             </ul>
-                 </nav>
-             <ul class="contacts-nav list menu"> 
-                <li class="menu__item"> 
-                    <a href="mailto:info@devstudio.com" class="item menu__link "> 
-                        <svg class="icon menu__item-icon" width= "16" height= "12" fill= "currentcolor">
-                            <use href="./images/sprite.svg.svg#icon-envelopehsvg"> </use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                 </li>
-             <li class="menu__item">
-                 <a href="tel:+380961111111" class="item menu__link "> 
-                    <svg class="icon menu__item-icon" width= "10" height= "16" fill= "currentcolor"> 
-                        <use  href="./images/tel.svg.svg#icon-Vector"> 
-                        </use>
-                    </svg>
-                     +38 096 111 11 11
-                    </a>
-                </li>
-             </ul>
-                </div>
-            </header> 
+    <header class=" page header">
+        <div class="portfolio__container header__portfolio__container"> 
+         <a href="./index.html" class="logo header__logo"> <span class="logo__color">Web</span> Studio</a>
+         <div class="mobile-menu" id="menu-container" data-menu>
+         <nav class="navigation">
+     <ul class="site-nav list menu">
+         <li class="site-nav__item"> <a href="" class="link site-nav__link"> Студия</a></li>
+        <li class="site-nav__item"><a href="./portfolio.html" class="link site-nav__link link-current" >Портфолио</a></li>
+        <li class="site-nav__item"><a href="" class="link site-nav__link">Контакты</a></li>
+     </ul>
+         </nav>
+         <div class="header-social-box">
+     <ul class="contacts-nav list "> 
+        <li class="site-nav__item mail"> 
+            <a href="mailto:info@devstudio.com" class="item site-nav__mail ">
+                <svg class="icon site-nav__mail-icon" width= "16" height= "12" fill= "currentcolor">
+                    <use  href="./images/sprite.svg.svg#icon-envelopehsvg"> </use>
+                </svg>
+                info@devstudio.com 
+             </a>
+         </li>
+     <li class="site-nav__item tel">
+         <a href="tel:+380961111111" class="item site-nav__tel">
+             <svg class="icon site-nav__tel-icon" width= "10" height= "16" fill= "currentcolor"> 
+                 <use href="./images/tel.svg.svg#icon-Vector"> 
+                 </use>
+             </svg>
+              +38 096 111 11 11
+             </a>
+         </li>
+     </ul>
+     <ul class="header-socials">
+         <li class="header-socials__item">
+           <a href="" class="header-socials__link">Instagram</a>
+         </li>
+         <li class="header-socials__item">
+           <a href="" class="header-socials__link">Twitter</a>
+         </li>
+         <li class="header-socials__item">
+           <a href="" class="header-socials__link">Facebook</a>
+         </li>
+         <li class="header-socials__item">
+           <a href="" class="header-socials__link">LinkedIn</a>
+         </li>
+       </ul>
+     </div>
+ </div>
+ <button
+ type="button"
+ class="header-menu-button"
+ aria-label="Переход мобильного меню"
+ aria-expanded="false"
+ data-menu-button
+ >
+ <svg class="header-menu-button__svg" width="40" height="40">
+   <use
+     class="header-menu-button__icon header-menu-button__icon--cross"
+     href="./images/icon/menu.svg#icon-cross"
+   ></use>
+   <use
+     class="header-menu-button__icon header-menu-button__icon--menu"
+     href="./images/icon/menu.svg#icon-menu"
+   ></use>
+ </svg>
+ </button>
+        </div>
+    </header> 
            <!-- тело -->
            <main>
                 <div class="portfolio__container">

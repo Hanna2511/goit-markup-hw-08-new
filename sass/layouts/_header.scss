@@ -84,7 +84,28 @@
     }
 
 }
- 
+.logo {
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 27px;
+  color: var(--button-portfolio-color);
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.logo__color{
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
   .site-nav {
     list-style: none;
 

@@ -42,6 +42,7 @@ p,
 ul {
   margin-top: 0;
   margin-bottom: 0;
+  padding-inline-start: 0;
 }
 
 .visually-hidden {
@@ -73,19 +74,15 @@ img {
 }
 
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
+.portfolio,
 .portfolio-page {
   font-family: Roboto, sans-serif;
+  background-color: var(--title-name-color);
+  color: var(--primary-text-color);
 }
 
 .container,
@@ -405,91 +402,68 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio {
-  font-family: Roboto, sans-serif;
-  background-color: var(--title-name-color);
-  color: var(--primary-text-color);
-}
-
-.projects {
-  padding-top: 40px;
-  padding-top: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .projects {
-    margin-top: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .projects {
-    margin-top: 50px;
-  }
-}
-
-.projects-list {
+.collection__list {
   max-width: 480px;
 }
 
 @media screen and (min-width: 768px) {
-  .projects-list {
+  .collection__list {
     max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .projects-list {
+  .collection__list {
     max-width: 1200px;
   }
 }
 
-.projects-list {
+.collection__link {
   display: flex;
   flex-direction: column;
-  transition: box-shadow var(--animation);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-list:hover, .projects-list:focus {
+.collection__link:hover, .collection__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.projects-list:hover .projects-list__texts,
-.projects-list:focus .projects-list__texts {
+.collection__link:hover .collection__projects-details,
+.collection__link:focus .collection__projects-details {
   transform: translatey(0);
 }
 
-.projects-list__link .projects-list__border {
+.collection__link .collection__container-profession {
   flex-grow: 1;
 }
 
-.projects-list__card {
+.collection__items {
   display: flex;
   flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
-  .projects-list__card {
+  .collection__items {
     --grid-item: 2;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .projects-list__card {
+  .collection__items {
     --grid-item: 3;
   }
 }
 
-.projects-list__card .projects-list__link {
+.collection__items .collection__link {
   flex-grow: 1;
 }
 
-.projects-list__foto {
+.collection__projects-container {
   position: relative;
   overflow: hidden;
 }
 
-.projects-list__text {
+.collection__projects-details {
   position: absolute;
   top: 0;
   left: 0;
@@ -499,13 +473,13 @@ img {
   font-weight: 400;
   padding: 63px 24px;
   margin-bottom: 0;
-  color: #fff;
+  color: var(--title-name-color);
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(101%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform v250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-list__work {
+.collection__container-profession {
   border: 1px solid #eeeeee;
   border-top: inherit;
   background-color: var(--title-name-color);
@@ -515,15 +489,16 @@ img {
   padding-left: 24px;
 }
 
-.projects-list__title {
+.collection__projects-title {
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--title-text-color);
 }
 
-.projects-list__work {
+.collection__projects-profession {
   margin-bottom: 0;
   color: var(--primary-text-color);
   font-size: 16px;
@@ -1044,8 +1019,7 @@ img {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin: -15px;
 }
 
 .grid__team {
@@ -1063,8 +1037,7 @@ img {
 
 .grid__item {
   flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
-  margin-left: 30px;
-  margin-top: 30px;
+  margin: 15px;
   box-shadow: 0px 1px 3px rgba(168, 150, 150, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--title-name-color);
@@ -1627,5 +1600,7 @@ img {
   --bg-page-color: #E5E5E5;
   --button-portfolio-color:#000000;
   --prog-color: #EEEEEE ;
+  --grid-item: 1;
+  tab-size: 4;
 }
 /*# sourceMappingURL=styles.css.map */

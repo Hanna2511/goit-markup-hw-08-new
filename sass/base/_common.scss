@@ -40,6 +40,7 @@ p ,
 ul {
    margin-top: 0; 
    margin-bottom: 0;
+   padding-inline-start: 0;
 }
 .visually-hidden {
     position: absolute !important;
@@ -67,15 +68,13 @@ img {
     margin-left: auto;
   }
   .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  
-    @media screen and (min-width: 1200px) {
       padding-top: 94px;
       padding-bottom: 94px;
     }
-  }
-  
+
+  .portfolio,
   .portfolio-page {
     font-family: Roboto, sans-serif;
+    background-color: var(--title-name-color);
+    color: var(--primary-text-color); 
   }

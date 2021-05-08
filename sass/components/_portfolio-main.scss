@@ -5,24 +5,7 @@
         color: var(--primary-text-color); 
         
     }
-    .portfolio-navigator {
-        padding-top: 80px;
-
-        @media screen and (min-width: 1200px) {
-          text-align: center;
-    justify-content: center;
-    margin-bottom: 50px;
-        }
-
-        
-    &__list {
-      display: inline-flex;
-      flex-wrap: wrap;
-      margin-top: 0;
-      margin-bottom: 0;
-      margin-left: -8px;
-    }
-    }
+  
   
     .projects {
       padding-top: 40px;

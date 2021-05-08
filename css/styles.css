@@ -402,68 +402,68 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.collection__list {
+.projects__list {
   max-width: 480px;
 }
 
 @media screen and (min-width: 768px) {
-  .collection__list {
+  .projects__list {
     max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .collection__list {
+  .projects__list {
     max-width: 1200px;
   }
 }
 
-.collection__link {
+.projects__link {
   display: flex;
   flex-direction: column;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.collection__link:hover, .collection__link:focus {
+.projects__link:hover, .projects__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.collection__link:hover .collection__projects-details,
-.collection__link:focus .collection__projects-details {
+.projects__link:hover .projects__projects-details,
+.projects__link:focus .projects__projects-details {
   transform: translatey(0);
 }
 
-.collection__link .collection__container-profession {
+.projects__link .projects__container-profession {
   flex-grow: 1;
 }
 
-.collection__items {
+.projects__items {
   display: flex;
   flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
-  .collection__items {
+  .projects__items {
     --grid-item: 2;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .collection__items {
+  .projects__items {
     --grid-item: 3;
   }
 }
 
-.collection__items .collection__link {
+.projects__items .projects__link {
   flex-grow: 1;
 }
 
-.collection__projects-container {
+.projects__projects-container {
   position: relative;
   overflow: hidden;
 }
 
-.collection__projects-details {
+.projects__projects-details {
   position: absolute;
   top: 0;
   left: 0;
@@ -479,7 +479,7 @@ img {
   transition: transform v250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.collection__container-profession {
+.projects__container-profession {
   border: 1px solid #eeeeee;
   border-top: inherit;
   background-color: var(--title-name-color);
@@ -489,7 +489,7 @@ img {
   padding-left: 24px;
 }
 
-.collection__projects-title {
+.projects__projects-title {
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -498,7 +498,7 @@ img {
   color: var(--title-text-color);
 }
 
-.collection__projects-profession {
+.projects__projects-profession {
   margin-bottom: 0;
   color: var(--primary-text-color);
   font-size: 16px;
